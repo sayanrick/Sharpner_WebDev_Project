@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Management App Using REST API</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div>
+        <h1>Candy Management App Using REST API</h1>
+        <form onSubmit="addItem(event)">
+            <label> Candy Name</label>
+            <input type="text" name="candyname" id="candyNameInputTag" required/>
+            <label> Description</label>
+            <input type="text" name="description" id="descriptionInputTag" required/>
+            <label> Price</label>
+            <input type="number" name="price" id="priceInputTag" required/>
+            <label> Quantity</label>
+            <input type="number" name="quantity" id="quantityInputTag" required/>
+            <button type="submit" id="submitButton">Add Item</button>
+        </form>
+    </div>
+    <ul id="listOfitems">
+        <!-- List items will be added dynamically here -->
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</body>
+</html>
