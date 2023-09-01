@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cricket Player Information Form</h1>
+
+    <!-- Search input -->
+    <input type="text" id="searchInput" placeholder="Search by player name">
+
+    <form id="playerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" required>
+
+        <label for="photoUrl">Photo URL:</label>
+        <input type="url" id="photoUrl" name="photoUrl" required>
+
+        <label for="birthplace">Birthplace:</label>
+        <input type="text" id="birthplace" name="birthplace" required>
+
+        <label for="career">Career:</label>
+        <input type="text" id="career" name="career" required>
+
+        <label for="matches">Number of Matches:</label>
+        <input type="number" id="matches" name="matches" required>
+
+        <label for="score">Total Score:</label>
+        <input type="number" id="score" name="score" required>
+
+        <label for="fifties">Fifties:</label>
+        <input type="number" id="fifties" name="fifties" required>
+
+        <label for="centuries">Centuries:</label>
+        <input type="number" id="centuries" name="centuries" required>
+
+        <label for="wickets">Wickets:</label>
+        <input type="number" id="wickets" name="wickets" required>
+
+        <label for="average">Batting Average:</label>
+        <input type="number" id="average" name="average" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Player Information</h2>
+    <div id="playerData">
+        <!-- Player data will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
